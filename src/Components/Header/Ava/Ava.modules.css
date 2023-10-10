@@ -1,0 +1,9 @@
+.avva img {
+  display: flex;
+  height: 5.2%;
+  margin-left: 4%;
+  cursor: pointer;
+  position: absolute;
+
+  top: 0;
+}

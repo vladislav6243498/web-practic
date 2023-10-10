@@ -1,16 +1,12 @@
-import React from "react";
 import "./App.css";
-import { useDispatch, useSelector } from "react-redux";
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 
-function App() {
-  // const dispatch = useDispatch();
-
+const App = () => {
   return (
-    <div className="App">
+    <div div className="App">
       <Header />
     </div>
   );
-}
+};
 
 export default App;
