@@ -20,7 +20,7 @@
 .menu__content {
   width: 17%;
   height: 100%;
-  top: -50px;
+  top: -60px;
   background-color: #3b3632;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,6 @@
   padding: 10px;
   font-size: 2rem;
   color: red;
-  border-bottom: 1px solid white;
   width: 100%;
   text-align: center;
   top: 35px;
@@ -49,6 +48,7 @@
   flex-direction: column;
   top: 10px;
   position: relative;
+  left: 20px;
 }
 .lUa ul li {
   display: flex;
@@ -128,9 +128,10 @@ h2 {
   border: 0;
 }
 .bbat1 {
+  font-size: 15px;
   position: absolute;
   left: 235px;
-  top: 10px;
+  top: -20px;
   color: white;
   background-color: #3b3632;
   border-radius: 7px;
@@ -138,16 +139,17 @@ h2 {
   width: 40px;
 }
 .bbat2 {
+  font-size: 15px;
   position: absolute;
   left: 280px;
-  top: 10px;
+  top: -20px;
   color: white;
   background-color: #3b3632;
   border-radius: 7px;
   height: 25px;
   width: 40px;
 }
-.lRu ul li a {
+/* .lRu ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
@@ -163,7 +165,7 @@ h2 {
   display: flex;
   align-items: center;
   margin: 10px 0;
-}
+} */
 .ex {
   position: absolute;
   color: darkblue;

@@ -5,43 +5,43 @@ import { FaYoutube } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FaTelegram } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import useLocalStorage from "../../../hooks/use-localstorage";
 import i18n from "../../../18n";
-import UaLang from "./Lang/UaL";
-import RuLang from "./Lang/RuL";
 
-const Menu = ({ header, item1, item2, active, setActive }) => {
-  const { t } = useTranslation();
-  const [language, setLanguage] = useLocalStorage("language", "RU");
-  const handleLenguageChange = () => {
-    if (language === "UA") {
-      i18n.changeLanguage("RU");
-      setLanguage("RU");
-    } else if (language === "RU") {
-      i18n.changeLanguage("UA");
-      setLanguage("UA");
-    }
-    <RuLang />;
+const Menu = ({ header, items1, active, setActive }) => {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
   };
 
   return (
     <div
+      add
       className={active ? "menu active" : "menu"}
       onClick={() => setActive(false)}
     >
       <div className="blur" />
       <div className="menu__content" onClick={(e) => e.stopPropagation()}>
-        <div className="menu__header">{header}</div>
-        <button className="bbat1" onClick={handleLenguageChange}>
-          {t("RU")}
-        </button>
-        {/* <div onClick={handleLenguageChange} className="ex">
-          {t("RU")} Hello
-        </div> */}
+        <div className="menu__header">
+          <button className="bbat1" onClick={() => changeLanguage("ua")}>
+            UA
+          </button>
+          <button className="bbat2" onClick={() => changeLanguage("ru")}>
+            RU
+          </button>
+          <div>{t("text")}</div>
+          {header}
 
-        <button className="bbat2" onClick={handleLenguageChange}>
-          {t("UA")}
-        </button>
+          <div className="lUa">
+            <ul>
+              {items1.map((item) => (
+                <li>
+                  <a href={item.href}>{item.value}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        ;
       </div>
       <h1>Особистий кабінет</h1>
       <button className="bat1">Увійти</button>
