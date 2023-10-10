@@ -15,16 +15,16 @@ const Header = () => {
     { value: "Допомога", href: "/help" },
     { value: "Про компанію", href: "/company" },
   ];
-  const items2 = [
-    { value: "Сейчас в кино", href: "/main" },
-    { value: "Скоро в прокате", href: "/future" },
-    { value: "Купить попкорн онлайн", href: "/eat" },
-    { value: "Акции и скидки", href: "/act" },
-    { value: "Кинотеатры", href: "/kino" },
-    { value: "Возврат билетов", href: "/bilet" },
-    { value: "Помощь", href: "/help" },
-    { value: "О компании", href: "/company" },
-  ];
+  // const items2 = [
+  //   { value: "Сейчас в кино", href: "/main" },
+  //   { value: "Скоро в прокате", href: "/future" },
+  //   { value: "Купить попкорн онлайн", href: "/eat" },
+  //   { value: "Акции и скидки", href: "/act" },
+  //   { value: "Кинотеатры", href: "/kino" },
+  //   { value: "Возврат билетов", href: "/bilet" },
+  //   { value: "Помощь", href: "/help" },
+  //   { value: "О компании", href: "/company" },
+  // ];
   return (
     <div>
       <nav>
@@ -38,7 +38,6 @@ const Header = () => {
         setActive={setMenuActive}
         header={"Multiplex"}
         items1={items1}
-        items2={items2}
       />
     </div>
   );
