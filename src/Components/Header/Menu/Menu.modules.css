@@ -1,0 +1,172 @@
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 50px;
+  left: 0;
+  transform: translateX(-130%);
+  transition: all 0.5s;
+}
+.menu.active {
+  transform: translateX(0);
+}
+.blur {
+  left: 30%;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  position: absolute;
+}
+.menu__content {
+  width: 17%;
+  height: 100%;
+  top: -50px;
+  background-color: #3b3632;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+  position: absolute;
+}
+.menu__header {
+  padding: 10px;
+  font-size: 2rem;
+  color: red;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: center;
+  top: 35px;
+  position: relative;
+}
+.lUa ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.lUa ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+  position: relative;
+}
+.lUa ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .menu__content {
+    width: 100%;
+  }
+  .blur {
+    backdrop-filter: none;
+  }
+}
+h1 {
+  color: white;
+  position: absolute;
+  top: 490px;
+  left: 40px;
+  font-size: 15px;
+}
+.bat1 {
+  background-color: red;
+  color: white;
+  top: 555px;
+  left: 35px;
+  position: absolute;
+  height: 45px;
+  width: 120px;
+  border-radius: 15px;
+}
+h2 {
+  color: white;
+  position: absolute;
+  top: 590px;
+  left: 40px;
+  font-size: 15px;
+}
+.bat2 {
+  background-color: #3b3632;
+  color: white;
+  position: absolute;
+  top: 652px;
+  left: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+}
+.bat3 {
+  background-color: #3b3632;
+  color: white;
+  position: absolute;
+  top: 687px;
+  left: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+}
+.bat4 {
+  background-color: #3b3632;
+  color: white;
+  position: absolute;
+  top: 722px;
+  left: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+}
+.bat5 {
+  background-color: #3b3632;
+  color: white;
+  position: absolute;
+  top: 760px;
+  left: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+}
+.bbat1 {
+  position: absolute;
+  left: 235px;
+  top: 10px;
+  color: white;
+  background-color: #3b3632;
+  border-radius: 7px;
+  height: 25px;
+  width: 40px;
+}
+.bbat2 {
+  position: absolute;
+  left: 280px;
+  top: 10px;
+  color: white;
+  background-color: #3b3632;
+  border-radius: 7px;
+  height: 25px;
+  width: 40px;
+}
+.lRu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.lRu ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+  position: relative;
+}
+.lRu ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.ex {
+  position: absolute;
+  color: darkblue;
+  left: 400px;
+  top: 50px;
+}
